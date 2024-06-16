@@ -4,6 +4,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Card, CardContent, Typography, Grid, Box } from '@mui/material';
 import carouselData from '../../data/carouselData.json';
 import cardData from '../../data/cardData.json';
+import { NavBar } from '@/components/NavBar';
 
 type CarouselItem = {
   imageSrc: string;
@@ -20,7 +21,10 @@ const Home: React.FC = () => {
   const cardItems: CardItem[] = cardData;
 
   return (
-    <Box sx={{ margin: 'auto', maxWidth: '1200px', padding: '20px' }}>
+
+    <>
+    <NavBar/>
+    <Box sx={{ margin: 'auto', padding: '1.2em' }}>
       <Carousel showThumbs={false} showStatus={false} infiniteLoop autoPlay>
         {carouselItems.map((item, index) => (
           <div key={index}>
@@ -46,6 +50,7 @@ const Home: React.FC = () => {
         ))}
       </Grid>
     </Box>
+    </>
   );
 };
 

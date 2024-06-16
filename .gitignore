@@ -15,7 +15,7 @@ dist-ssr
 #Eliminar el archivo evn 
 
 
-src/.env
+.env
 
 # Editor directories and files
 .vscode/*

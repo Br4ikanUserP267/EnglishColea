@@ -64,7 +64,7 @@ const NavBar: React.FC<NavBarProps> = () => {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="fixed">
         <Toolbar sx={{ backgroundColor: theme.palette.mode === 'dark' ? '#333' : '#1976d2', justifyContent: 'space-between' }}>
-          <Typography variant="h6" component="div" sx={{ fontWeight: 'bold', color: '#fff', fontSize: '1.5rem', marginLeft: '15rem' }}>
+          <Typography variant="h6" component="div" sx={{ fontWeight: 'bold', color: '#fff', fontSize: '1.5rem'}}>
             English Courses {/* Title or brand of your application */}
           </Typography>
           {isMobile ? (
